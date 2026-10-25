@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>happy birthday meso ♡</title>
+<style>
+  :root { --pink:#f6b8d0; --rose:#d96b98; --deep:#9f456c; --cream:#fff8fb; }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; min-height:100vh; display:grid; place-items:center; overflow:hidden;
+    font-family: Georgia, 'Times New Roman', serif; color:var(--deep);
+    background: radial-gradient(circle at 20% 15%, #fff 0 5%, transparent 28%),
+                linear-gradient(145deg, #fff7fb, #fce1ec 48%, #f7c3d9);
+  }
+  .sparkles { position:fixed; inset:0; pointer-events:none; overflow:hidden; }
+  .sparkle { position:absolute; color:#fff; opacity:.9; animation: float 7s ease-in-out infinite; text-shadow:0 0 12px #e78eb4; }
+  .sparkle:nth-child(1){left:10%;top:16%;font-size:24px;animation-delay:-2s}
+  .sparkle:nth-child(2){left:84%;top:19%;font-size:18px;animation-delay:-4s}
+  .sparkle:nth-child(3){left:16%;top:77%;font-size:19px;animation-delay:-1s}
+  .sparkle:nth-child(4){left:89%;top:72%;font-size:26px;animation-delay:-3s}
+  .sparkle:nth-child(5){left:72%;top:88%;font-size:15px;animation-delay:-5s}
+  @keyframes float { 0%,100%{transform:translateY(0) rotate(0)} 50%{transform:translateY(-18px) rotate(12deg)} }
+  .card { position:relative; width:min(90vw,520px); padding:34px 26px 32px; text-align:center;
+    border:1px solid rgba(255,255,255,.85); border-radius:28px;
+    background:rgba(255,250,252,.72); box-shadow:0 20px 70px rgba(174,76,119,.16); backdrop-filter:blur(8px); }
+  .eyebrow { font: 11px/1.5 Arial,sans-serif; letter-spacing:.28em; text-transform:uppercase; color:#c16c91; }
+  h1 { margin:10px 0 4px; font-size:clamp(35px,8vw,53px); font-weight:400; letter-spacing:-.04em; color:#c65f8d; }
+  .subtitle { margin:0; font-size:16px; font-style:italic; color:#a65a7b; }
+  .swan { display:block; width:min(100%,290px); height:auto; margin:14px auto 8px; filter:drop-shadow(0 10px 8px rgba(193,94,139,.13)); }
+  .message { max-width:360px; margin:12px auto 0; font-size:16px; line-height:1.75; color:#94516f; }
+  .heart { color:#dc78a2; font-size:20px; margin-top:15px; }
+  .tiny { margin-top:8px; font:10px Arial,sans-serif; letter-spacing:.18em; text-transform:uppercase; color:#c17a99; }
+  .btn { margin-top:18px; padding:10px 20px; border:1px solid #edb0ca; border-radius:999px; color:#a64e77; background:#fff7fb; font:12px Arial,sans-serif; letter-spacing:.08em; cursor:pointer; transition:.2s; }
+  .btn:hover { background:#fbe0ec; transform:translateY(-2px); }
+  #surprise { display:none; margin:14px auto 0; font-style:italic; color:#c05b88; animation: appear .5s ease; }
+  @keyframes appear { from{opacity:0;transform:translateY(5px)} to{opacity:1;transform:translateY(0)} }
+  @media (max-height:700px) { .card{padding:20px} .swan{width:210px;margin:5px auto} .message{font-size:14px;line-height:1.5} }
+</style>
+</head>
+<body>
+<div class="sparkles" aria-hidden="true"><span class="sparkle">✧</span><span class="sparkle">✦</span><span class="sparkle">♡</span><span class="sparkle">✧</span><span class="sparkle">✦</span></div>
+<main class="card">
+  <div class="eyebrow">a little something for you</div>
+  <h1>happy birthday meso</h1>
+  <p class="subtitle">to my favourite girl, always ♡</p>
+  <svg class="swan" viewBox="0 0 320 245" role="img" aria-label="An elegant white swan with pink details">
+    <defs>
+      <linearGradient id="feather" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f8e8f0"/></linearGradient>
+      <linearGradient id="water" x1="0" x2="1"><stop stop-color="#f5b5d0" stop-opacity=".15"/><stop offset=".5" stop-color="#dc85ae" stop-opacity=".55"/><stop offset="1" stop-color="#f5b5d0" stop-opacity=".12"/></linearGradient>
+    </defs>
+    <ellipse cx="160" cy="211" rx="115" ry="12" fill="url(#water)"/>
+    <path d="M45 208 Q90 198 132 207 T220 207 T279 205" fill="none" stroke="#e7a1bf" stroke-width="2" stroke-linecap="round"/>
+    <path d="M76 194 C99 172 135 170 165 188 C193 205 233 196 250 180 C230 213 185 221 147 205 C119 194 95 201 76 194Z" fill="#f1c6d9" opacity=".65"/>
+    <path d="M91 178 C104 150 137 132 174 145 C197 153 218 174 241 173 C223 194 194 199 166 185 C142 173 115 188 91 178Z" fill="url(#feather)" stroke="#efd5e1" stroke-width="1.5"/>
+    <path d="M126 166 C145 149 171 151 193 171 C172 164 157 171 146 180Z" fill="#f7dce8"/>
+    <path d="M115 178 C102 154 115 128 137 111 C157 96 163 73 151 54 C143 41 127 38 117 47 C107 57 113 71 123 76 C132 81 139 74 136 67 C133 62 128 62 126 66 C126 58 136 57 141 64 C149 77 136 91 124 85 C105 76 99 57 112 42 C128 23 155 31 168 49 C187 75 171 105 152 125 C138 140 137 158 151 174Z" fill="url(#feather)" stroke="#ead2df" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M113 48 C124 35 144 42 150 57 C154 67 149 78 141 83" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="124" cy="49" r="2.6" fill="#8e5b70"/>
+    <path d="M112 46 L96 42 Q91 41 95 46 L109 52Z" fill="#e58aa9"/>
+    <path d="M94 43 L103 45 L96 48Z" fill="#c9688c"/>
+    <path d="M130 121 C145 134 157 147 165 166" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+    <path d="M88 190 Q125 182 151 193" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <path d="M217 150 l4 -8 l4 8 l8 4 l-8 4 l-4 8 l-4 -8 l-8 -4Z" fill="#fff" opacity=".85"/>
+    <path d="M72 130 l3 -6 l3 6 l6 3 l-6 3 l-3 6 l-3 -6 l-6 -3Z" fill="#fff" opacity=".9"/>
+  </svg>
+  <p class="message">you have the kindest heart and the sweetest soul<br>i’m so lucky you’re my cousin and my best friend<br>love you more than you know</p>
+  <div class="heart">♡ ♡ ♡</div>
+  <button class="btn" onclick="showSurprise()">one more thing ✧</button>
+  <p id="surprise">i hope life is always as gentle with you as you are with everyone else 🤍</p>
+  <div class="tiny">made with love, just for you</div>
+</main>
+<script>
+  function showSurprise() {
+    const note = document.getElementById('surprise');
+    note.style.display = note.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+</body>
+</html>
